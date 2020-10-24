@@ -1,12 +1,7 @@
-def Sequential_Search(list, n):
-    for i in range(len(list)): 
-        if list[i] == n: 
-            return True
-    return False
-    
-list = [1, 3, 'sum', 5,'equal', 7] 
-n = input("Enter the string/number :")
-if Sequential_Search(list, n): 
-    print("Found") 
-else: 
-    print("Not Found") 
+def max_num_in_list( list ):
+    max = list[ 0 ]
+    for a in list:
+        if a > max:
+            max = a
+    return max
+print(max_num_in_list([23, 32, 18, 20, 13, 3]))
